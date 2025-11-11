@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de libros</title>
+    <link rel="stylesheet" href=".//css/bootstrap.min.css">
+    <link rel="stylesheet" href=".//estilos.css">
+    <!--Llamar a los estilos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-journal-bookmark-fill"></i> Reseñas de Libros</a> <!-- cambio: agregué icono -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-heart"></i> Home</a>
+                    </li>
+
+                    <!-- cambio: reemplacé el "Link" por algo más útil -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-collection"></i> Reseñas</a>
+                    </li>
+
+                    <!-- cambio: dropdown ahora es de categorías -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Thriller</a></li>
+                            <li><a class="dropdown-item" href="#">Fantasía</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-info-circle"></i> Sobre nosotros</a> <!-- cambio: nuevo ítem -->
+                    </li>
+                </ul>
+
+                <!-- cambio: buscador más descriptivo -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar reseñas, libros o autores..." aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <!-- cambio: botón modo oscuro/claro -->
+                <button class="btn btn-outline-light ms-2"><i class="bi bi-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="/Boulevard.jpg" class="d-block w-50" alt="Boulevard">
+        <div class="container reseña">
+            <h3>Reseña Boulevard</h3>
+                <p>
+                “Boulevard” es una novela juvenil que ha conquistado a miles de lectores por la intensidad de su historia y lo real de sus emociones. La trama sigue a Luke Howland y Hasley Weigel, dos jóvenes completamente diferentes que se encuentran en un punto inesperado de sus vidas. Luke, con un pasado marcado por la oscuridad, la violencia y las adicciones, y Hasley, una chica soñadora, distraida y sensible, desarrollan una relación que se transforma en un refugio, pero también en un reto para ambos.
+                El libro refleja la belleza y la crudeza del primer amor: esa mezcla de ilusión, dolor, esperanza y miedo a perder. Flor M. Salvador logra transmitir sentimientos profundos a través de un lenguaje sencillo, pero cargado de emoción, lo que hace que los lectores se sientan identificados con los personajes y sus luchas internas. A lo largo de la historia, se exploran temas como la amistad, la superación personal, las segundas oportunidades y la importancia de aceptar tanto la luz como la oscuridad de quienes amamos. Aunque en ocasiones el tono puede resultar melancólico, la narrativa mantiene al lector atrapado hasta la última página. Boulevard no es solo una novela romántica juvenil, sino también un viaje hacia la comprensión del dolor, la fragilidad y la esperanza que nacen al compartir la vida con alguien más. Es un libro que emociona, duele y deja huella.
+
+                </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/Asesino de brujas.jpg" class="d-block w-50" alt="Asesino de brujas">
+        <div class="container reseña">
+            <h3>Reseña Asesino de brujas</h3>
+                <p>
+                Asesino de brujas: La bruja blanca es la primera entrega de la trilogía escrita por Shelby Mahurin. La historia nos transporta a un mundo donde las brujas son perseguidas y temidas, y donde la magia está prohibida. La protagonista, Louise le Blanc (Lou), es una joven bruja que huye de su aquelarre y se esconde en una ciudad para sobrevivir. Su vida da un giro inesperado cuando, por azares del destino, termina unida en matrimonio con Reid Diggory, un cazador de la Iglesia quien por azares del destino se dedica justamente a perseguir y exterminar brujas.
+                Lo interesante de esta novela es el contraste entre ambos personajes: Lou, rebelde y sarcástica, que lucha por su libertad, y Reid, un hombre recto y disciplinado, guiado por las normas y su fe. A través de esta relación forzada, se van rompiendo prejuicios, se exploran los límites entre el odio y el amor, y se cuestionan las creencias que han separado a sus mundos.
+                La narración mezcla romance, fantasía y aventura con un toque oscuro, lo que la convierte en una lectura adictiva. Además, Shelby Mahurin aborda temas como el fanatismo, la identidad, la lealtad y la importancia de elegir por uno mismo, lo que enriquece mucho más la trama.
+                </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/El club de los psicopatas.jpg" class="d-block w-50" alt="El club de los psicópatas">
+        <div class="container reseña">
+            <h3>Reseña El club de los psicopatas</h3>
+                <p>
+                El club de los psicópatas es un thriller psicológico escrito por John Katzenbach que atrapa desde el inicio con su intriga y tensión. La historia comienza cuando una pareja de jovenes comienza una loca excursion en la dark web topandose asi con un grupo de psicopatas que disfruta subiendo sus asesinatos en esta, comenzando un juego que parece infantil terminan siendo perseguidos por este grupo de psicopatas que se hacen llamar los muchachos de Jack, 
+                con una inteligencia feroz, planean como venganza la muerte de los dos adolescentes junto con la de sus familias. Sin embargo, Connor y Niki (los protagonistas) no son como el resto de las víctimas de estos asesinos en serie. La pesadilla comienza y solo hay dos opciones: dejarse cazar o sobrevivir. Y ellos junto a su familia no permitiran estar del lado de los cazados, ellos cazaran y sobreviviran ante todo pronostico. 
+                </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/El pecador de oxford.jpg" class="d-block w-50" alt="El club de los psicópatas">
+        <div class="container reseña">
+            <h3>Reseña El pecador de Oxford</h3>
+                <p>
+                "El pecador de Oxford" es una novela de romance y thriller escrita por Mar Petryk en 2022. La historia sigue a Isabelle, una mujer que cambió su vida y su identidad tras descubrir que su marido, Aaron, era el asesino en serie conocido como "El pecador de Oxford". Cuando un misterioso paquete llega tres años después, la vida de Isabelle vuelve a estar en peligro, y un enigmático francotirador retirado se convierte en su protector. 
+                Su ex marido la asecha con lo que él considera por amor pero esto es más bien una obsesión por ella, cada detalle que parece inocente puede ser una nueva amenaza, la misión aquí es sobrevivir con libertad.  
+                </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/Hong Kong Hacker.jpg" class="d-block w-50" alt="El club de los psicópatas">
+        <div class="container reseña">
+            <h3>Reseña Hong Kong Hacker</h3>
+                <p>
+                Hong Kong Hacker, escrito por Chan Ho-Kei, es un thriller tecnológico y social que combina intriga, justicia y reflexión sobre el poder de la información. La novela sigue a un joven hacker que, cansado de la corrupción y la indiferencia de las autoridades, decide usar sus habilidades informáticas para destapar secretos, denunciar injusticias y enfrentarse a quienes creen estar por encima de la ley.
+                La trama se desarrolla en una Hong Kong vibrante y caótica, donde la tecnología se convierte en el arma más poderosa. Con gran ritmo narrativo, la historia alterna momentos de acción con reflexiones sobre la ética, la responsabilidad y los límites entre la justicia y la venganza.
+                Uno de los puntos más atractivos del libro es la manera en que explora la relación entre la tecnología y la sociedad, mostrando tanto sus beneficios como sus riesgos. A través del protagonista, el lector se cuestiona: ¿hasta qué punto es válido romper las reglas si es por una causa justa?
+                </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/La teoria del amor.jpg" class="d-block w-50" alt="El club de los psicópatas">
+        <div class="container reseña">
+            <h3>Reseña La teoria del amor</h3>
+                <p>
+                La teoría del amor, de Ali Hazelwood, es una novela romántica contemporánea que mezcla ciencia, humor y emociones reales. La historia sigue a dos científicos que, por diferentes motivos, deciden fingir una relación, pero poco a poco ese experimento se transforma en algo mucho más complejo que ninguna fórmula puede explicar. 
+                La autora logra mostrar un contraste entre el mundo estructurado y racional de la ciencia y lo impredecible de los sentimientos. Los protagonistas son carismáticos y están llenos de imperfecciones, lo que hace que sus diálogos sean frescos, divertidos y, al mismo tiempo, profundos. Uno de los puntos fuertes del libro es cómo expone la importancia de la confianza y la vulnerabilidad dentro de una relación, 
+                recordándonos que el amor no siempre es lógico ni medible, sino algo que se siente y transforma.
+                </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/Sigue mi voz.jpg" class="d-block w-50" alt="El club de los psicópatas">
+        <div class="container reseña">
+            <h3>Reseña Sigue mi voz</h3>
+                <p>
+                Sigue mi voz, de Ariana Godoy, es una novela juvenil que combina la fragilidad emocional con la esperanza de sanar. La historia sigue a Klara, una chica que perdió a su madre a causa de una enfermedad y que, tiempo después, enfrentó la misma. Aunque logra recuperarse físicamente, queda marcada por secuelas psicológicas: ataques de ansiedad, miedo y la sensación de encierro en su propia vida.
+                En medio de esa oscuridad, encuentra un refugio inesperado en el programa de radio Sigue mi voz, donde decide enviar una carta. Ese gesto cambia su destino, ya que Kang, el presentador, la lee y poco a poco comienzan a comunicarse por mensajes. Con el apoyo de su hermana y su cuñado, Klara va recuperando fuerzas y se atreve a regresar a la escuela, sin imaginar que allí también encontrará a Kang, el chico detrás de la voz que le devolvió la esperanza.
+                La novela se construye a través de cartas y mensajes, lo que la vuelve íntima y emotiva, mostrando cómo dos personas pueden conocerse profundamente sin necesidad de la presencia física. Ariana Godoy transmite con sencillez la importancia de la comunicación, el poder de sentirse escuchado y la manera en que los vínculos sinceros pueden convertirse en una salvación.
+                Más allá de un romance adolescente, Sigue mi voz es una historia sobre la superación, la confianza y la valentía de abrir el corazón, recordándonos que incluso en los momentos más difíciles, siempre puede existir alguien dispuesto a acompañarnos. 
+                </p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+    </div>
+
+  <div class="container my-4">
+  <div class="row justify-content-center g-3">
+
+    <div class="col-md-3">
+      <div class="card text-center h-100">
+        <img src="/Asesino de brujas.jpg" class="card-img-top img-fluid" alt="..." style="max-height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Asesino de brujas</h5>
+          <p class="card-text small">Asesino de brujas es una historia envolvente sobre la lucha de una bruja en un mundo donde ellas son perseguidas y temidas, ademas de que la magia esta prohibida, es una historia que mezcla el odio y el amor en medio de la busca de la supervivencia.</p>
+          <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-center h-100">
+        <img src="/El club de los psicopatas.jpg" class="card-img-top img-fluid" alt="..." style="max-height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">El Club de los psicopatas</h5>
+          <p class="card-text small">Es un thriller psicológico que narra la historia de dos jovenes que en su curiosidad entraron en la dark web topandose con un grupo de psicopatas que tras una breve conversacion decidieron tomar venganza contra ellos, pero estos dos jovenes y su familia lucharan por sobrevivir en esta caceria. </p>
+          <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-center h-100">
+        <img src="/El pecador de oxford.jpg" class="card-img-top img-fluid" alt="..." style="max-height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">El pecador de Oxford</h5>
+          <p class="card-text small">Novela de romance y thriller que narra la historia de huida de Isabelle tras descubrir que su esposo es un asesino en serie.</p>
+          <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-center h-100">
+        <img src="/Hong Kong Hacker.jpg" class="card-img-top img-fluid" alt="..." style="max-height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Hong Kong Hacker</h5>
+          <p class="card-text small">Hong Kong Hacker es una novela emocionante, llena de tensión y giros inesperados, que no solo entretiene, sino que también invita a reflexionar sobre la justicia, la libertad y el impacto del mundo digital en nuestras vidas.</p>
+          <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-center h-100">
+        <img src="/Boulevard.jpg" class="card-img-top img-fluid" alt="..." style="max-height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Boulevard</h5>
+          <p class="card-text small">Novela juvenil que sigue a Luke Howland y Hasley, dos jovenes con vidas diferentes que se enamoran, Luke, con un pasado marcado por la oscuridad, la violencia y las adicciones, y Hasley, una chica soñadora, distraida y sensible. Que les deparara el destino?</p>
+          <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-center h-100">
+        <img src="/La teoria del amor.jpg" class="card-img-top img-fluid" alt="..." style="max-height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">La teoria del amor</h5>
+          <p class="card-text small">La historia sigue a dos científicos que, por diferentes motivos, deciden fingir una relación, pero poco a poco ese experimento se transforma en algo mucho más complejo que ninguna fórmula puede explicar.</p>
+          <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card text-center h-100">
+        <img src="/Sigue mi voz.jpg" class="card-img-top img-fluid" alt="..." style="max-height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Sigue mi voz</h5>
+          <p class="card-text small">Sigue mi voz cuenta la historia de Klara una joven con bastantes traumas psicologicos despues de la perdida de su mamá y sufrir la misma enfermedad tiempo después, pero en medio d eeso conoce a Kang el presentador de su programa de radio favorito, su luz en medio de toda esa oscuridad.</p>
+          <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+</div>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

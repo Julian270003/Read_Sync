@@ -1,0 +1,52 @@
+/* Carrusel */
+.carousel-item img {
+  margin: 20px auto 0 auto;
+  max-height: 480px;       
+  object-fit: contain;     
+}
+
+body {
+  background: linear-gradient(to bottom, #c4d2f8, #7ccaf7); /* degradado azul claro */
+}
+
+/* Caja de reseña */
+.reseña {
+  margin-top: 30px;
+  padding: 40px;
+  text-align: justify;
+  background-color: #f7ebeb;   
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-left: 6px solid #b3ccf1;  
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.reseña h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000103;   
+  margin-bottom: 15px;
+}
+
+.reseña p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #307bec !important;
+}
